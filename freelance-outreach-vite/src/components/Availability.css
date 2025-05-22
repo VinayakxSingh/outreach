@@ -1,0 +1,175 @@
+.availability-section {
+  background-color: white;
+}
+
+.availability-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.availability-status {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.status-header {
+  background-color: var(--secondary);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.status-header h3 {
+  margin: 0;
+  color: white;
+}
+
+.status-content {
+  padding: 2rem;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.available .status-dot {
+  background-color: #4CAF50;
+  box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+.limited .status-dot {
+  background-color: #FF9800;
+  box-shadow: 0 0 0 4px rgba(255, 152, 0, 0.2);
+}
+
+.unavailable .status-dot {
+  background-color: #F44336;
+  box-shadow: 0 0 0 4px rgba(244, 67, 54, 0.2);
+}
+
+.available .status-text {
+  color: #4CAF50;
+}
+
+.limited .status-text {
+  color: #FF9800;
+}
+
+.unavailable .status-text {
+  color: #F44336;
+}
+
+.status-description {
+  margin-bottom: 2rem;
+  color: var(--gray-700);
+}
+
+.status-cta {
+  width: 100%;
+  text-align: center;
+}
+
+.schedule-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.schedule-card {
+  background-color: var(--gray-100);
+  padding: 2rem;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.schedule-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-card h4 {
+  margin-bottom: 1rem;
+}
+
+.schedule-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--gray-700);
+}
+
+.schedule-list li {
+  margin-bottom: 0.5rem;
+}
+
+.schedule-note {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.booking-process {
+  background-color: var(--gray-100);
+  padding: 3rem;
+  border-radius: 12px;
+}
+
+.booking-process h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.process-list {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.process-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  color: var(--gray-700);
+}
+
+.booking-cta {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .availability-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-details {
+    grid-template-columns: 1fr;
+  }
+}

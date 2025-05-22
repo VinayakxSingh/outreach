@@ -1,0 +1,278 @@
+.case-studies-section {
+  background-color: var(--gray-100);
+  overflow: hidden;
+}
+
+.case-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transform: scale(1.1);
+}
+
+.case-indicator {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--gray-300);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background-color: var(--primary);
+  transform: scale(1.2);
+}
+
+.case-slider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.case-study {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.case-content {
+  flex: 1;
+  padding: 3rem;
+  position: relative;
+}
+
+.case-header {
+  margin-bottom: 2rem;
+}
+
+.case-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.case-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.case-client, .case-industry {
+  background-color: var(--gray-100);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.case-details {
+  margin-bottom: 2rem;
+}
+
+.case-section {
+  margin-bottom: 1.5rem;
+}
+
+.case-section h4 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.results-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.results-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.results-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.case-testimonial {
+  background-color: var(--gray-100);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.author-position {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.btn-case-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-case-contact:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  transform: translateY(-3px);
+}
+
+.case-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-200);
+  padding: 2rem;
+}
+
+.case-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin-top: 5rem;
+}
+
+.testimonials-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-content {
+  padding: 2rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--gray-700);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.testimonial-text::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  left: -15px;
+  top: -20px;
+  color: rgba(26, 224, 148, 0.1);
+  font-family: Georgia, serif;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-info h4 {
+  margin-bottom: 0.3rem;
+}
+
+.author-info p {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .case-study {
+    flex-direction: column-reverse;
+  }
+
+  .case-image {
+    height: 250px;
+  }
+
+  .case-image img {
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
