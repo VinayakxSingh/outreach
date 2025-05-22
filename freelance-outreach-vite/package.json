@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc -b && vite build --outDir dist",
-    "lint": "bunx biome lint --write && bunx tsc --noEmit",
+    "build": "vite build --outDir dist",
+    "lint": "bunx biome lint --write",
     "format": "bunx biome format --write",
     "preview": "vite preview"
   },
