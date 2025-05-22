@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build --outDir dist",
+    "build": "npm install && vite build --outDir dist",
     "lint": "bunx biome lint --write",
     "format": "bunx biome format --write",
     "preview": "vite preview"
